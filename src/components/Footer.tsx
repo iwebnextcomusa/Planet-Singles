@@ -26,14 +26,13 @@ export default function Footer({ setCurrentPage }: FooterProps) {
           {/* Brand block */}
           <div className="space-y-4">
             <div className="flex items-center cursor-pointer" onClick={() => handleLinkClick('home')}>
-              <div className="relative mr-2 flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-tr from-purple-600 to-pink-500 p-[2px]">
-                <div className="flex items-center justify-center w-full h-full bg-slate-900 rounded-full">
-                  <Globe className="w-5 h-5 text-indigo-400 absolute" />
-                  <Heart className="w-4 h-4 text-pink-400 absolute animate-pulse" />
-                </div>
-              </div>
-              <span className="font-sans font-bold text-xl tracking-tight text-white">
-                Planet <span className="text-pink-500 font-extrabold">Singles</span>
+              <img
+                src="/logo.jpg"
+                alt="Planet Singles Logo"
+                className="w-10 h-10 mr-3 object-cover border-2 border-slate-950 dark:border-white rounded-none shadow-[2px_2px_0px_#000000] dark:shadow-[2px_2px_0px_#ffffff]"
+              />
+              <span className="font-sans font-black text-xl tracking-tighter uppercase italic text-white">
+                Planet <span className="text-rose-500 font-black">Singles</span>
               </span>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed">

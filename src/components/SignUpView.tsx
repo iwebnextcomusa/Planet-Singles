@@ -65,12 +65,11 @@ export default function SignUpView({ setCurrentPage, onSignUpSuccess }: SignUpVi
         {/* Brand Logo */}
         <div className="text-center space-y-3">
           <div className="flex items-center justify-center cursor-pointer" onClick={() => setCurrentPage('home')}>
-            <div className="relative mr-2 flex items-center justify-center w-9 h-9 rounded-none bg-rose-600 p-[2px] border-2 border-slate-950">
-              <div className="flex items-center justify-center w-full h-full bg-slate-950 rounded-none">
-                <Globe className="w-4 h-4 text-rose-400 absolute animate-pulse" />
-                <Heart className="w-3 h-3 text-pink-500 absolute" />
-              </div>
-            </div>
+            <img
+              src="/logo.jpg"
+              alt="Planet Singles Logo"
+              className="w-10 h-10 mr-3 object-cover border-2 border-slate-950 dark:border-white rounded-none shadow-[2px_2px_0px_#000000] dark:shadow-[2px_2px_0px_#ffffff]"
+            />
             <span className="font-mono font-black text-xl tracking-tight text-slate-950 dark:text-white uppercase italic">
               Planet <span className="text-rose-500">Singles</span>
             </span>

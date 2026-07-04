@@ -49,11 +49,11 @@ export default function Navigation({
         <div className="flex justify-between h-20">
           {/* Logo Brand */}
           <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => handleNavClick('home')}>
-            <div className="relative w-8 h-8 mr-3 flex-shrink-0">
-              <div className="absolute inset-0 rounded-full border-2 border-rose-500 opacity-50 animate-pulse"></div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-rose-500 rounded-full shadow-[0_0_12px_#fb7185]"></div>
-              <div className="absolute inset-0 rounded-full border border-slate-500 rotate-45"></div>
-            </div>
+            <img
+              src="/logo.jpg"
+              alt="Planet Singles Logo"
+              className="w-9 h-9 mr-3 object-cover border-2 border-slate-950 dark:border-white rounded-none shadow-[2px_2px_0px_#000000] dark:shadow-[2px_2px_0px_#ffffff]"
+            />
             <span className="font-sans font-black text-xl tracking-tighter uppercase italic text-slate-950 dark:text-white">
               Planet <span className="text-rose-500 font-black">Singles</span>
             </span>
